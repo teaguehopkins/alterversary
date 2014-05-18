@@ -20,6 +20,11 @@ var FirstdateSchema = new Schema({
 		type: Date,
 		default: Date.now
 	},
+  firstdate: {
+    type: Date,
+    default: Date.now,
+    required: 'Please fill in the first date'
+  },
 	user: {
 		type: Schema.ObjectId,
 		ref: 'User'

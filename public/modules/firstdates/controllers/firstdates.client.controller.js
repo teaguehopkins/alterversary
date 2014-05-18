@@ -9,7 +9,8 @@ angular.module('firstdates').controller('FirstdatesController', ['$scope', '$sta
         $scope.create = function() {
         	// Create new Firstdate object
             var firstdate = new Firstdates({
-                name: this.name
+                name: this.name,
+                firstdate: this.firstdate
             });
 
             // Redirect after save

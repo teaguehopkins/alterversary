@@ -1,6 +1,6 @@
 <section data-ng-controller="FirstdatesController" data-ng-init="findOne()">
 	<div class="page-header">
-		<h1>{{firstdate.name}}</h1>
+		<h1>{{firstdate.name}}<br>First Date: {{firstdate.firstdate}}</h1>
 	</div>
 	<div class="pull-right" data-ng-show="authentication.user._id == firstdate.user._id">
 		<a class="btn btn-primary" href="/#!/firstdates/{{firstdate._id}}/edit">
